@@ -1,0 +1,62 @@
+[
+    {
+        "model": "crops_app.crops",
+        "pk":1,
+        "fields":{
+            "name": "Wheat",
+            "image": "../images/wheat.png",
+            "description": "This is where instructions go",
+            "plant_season": "Spring, Fall",
+            "grow_time": 18,
+            "average_yield": "10 to 12 pounds per 100 sq ft"
+        }
+    },
+    {
+        "model": "crops_app.crops",
+        "pk":2,
+        "fields":{
+            "name": "Corn",
+            "image": "../images/corn.png",
+            "description": "This is where instructions go",
+            "plant_season": "Spring",
+            "grow_time": 16,
+            "average_yield": "173.8 bushels per acre(60 pounds per bushel)"
+        }
+    },
+    {
+        "model": "crops_app.crops",
+        "pk":3,
+        "fields":{
+            "name": "Potatoes",
+            "image": "../images/potatoes.png",
+            "description": "This is where instructions go",
+            "plant_season": "Spring",
+            "grow_time": 18,
+            "average_yield": "10 pounds harvested per 1 pound planted"
+        }
+    },
+    {
+        "model": "crops_app.crops",
+        "pk":4,
+        "fields":{
+            "name": "Strawberries",
+            "image": "../images/strawberries.png",
+            "description": "This is where instructions go",
+            "plant_season": "Spring",
+            "grow_time": 5,
+            "average_yield": "10000 to 20000 pounds per acre(0.75 to 1.25 pounds per plant)"
+        }
+    },
+    {
+        "model": "crops_app.crops",
+        "pk":5,
+        "fields":{
+            "name": "Tomatoes",
+            "image": "../images/tomatoes.png",
+            "description": "This is where instructions go",
+            "plant_season": "Summer",
+            "grow_time": 13,
+            "average_yield": "20 to 30 fruit per plant"
+        }
+    }
+]
