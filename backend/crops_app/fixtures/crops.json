@@ -4,7 +4,7 @@
         "pk":1,
         "fields":{
             "name": "Wheat",
-            "image": "../images/wheat.png",
+            "picture": "https://cdn.britannica.com/90/94190-050-C0BA6A58/Cereal-crops-wheat-reproduction.jpg",
             "description": "This is where instructions go",
             "plant_season": "Spring, Fall",
             "grow_time": 18,
@@ -16,7 +16,7 @@
         "pk":2,
         "fields":{
             "name": "Corn",
-            "image": "../images/corn.png",
+            "picture": "https://hips.hearstapps.com/hmg-prod/images/is-corn-grain-1544222258.jpg",
             "description": "This is where instructions go",
             "plant_season": "Spring",
             "grow_time": 16,
@@ -28,7 +28,7 @@
         "pk":3,
         "fields":{
             "name": "Potatoes",
-            "image": "../images/potatoes.png",
+            "picture": "https://cdn.mos.cms.futurecdn.net/iC7HBvohbJqExqvbKcV3pP-970-80.jpg.webp",
             "description": "This is where instructions go",
             "plant_season": "Spring",
             "grow_time": 18,
@@ -40,7 +40,7 @@
         "pk":4,
         "fields":{
             "name": "Strawberries",
-            "image": "../images/strawberries.png",
+            "picture": "https://www.foodrepublic.com/img/gallery/15-things-you-didnt-know-about-strawberries/intro-1694037534.webp",
             "description": "This is where instructions go",
             "plant_season": "Spring",
             "grow_time": 5,
@@ -52,11 +52,23 @@
         "pk":5,
         "fields":{
             "name": "Tomatoes",
-            "image": "../images/tomatoes.png",
+            "picture": "https://www.tastingtable.com/img/gallery/20-tricks-to-make-your-tomatoes-even-more-delicious/intro-1684770527.webp",
             "description": "This is where instructions go",
             "plant_season": "Summer",
             "grow_time": 13,
             "average_yield": "20 to 30 fruit per plant"
+        }
+    },
+    {
+        "model": "crops_app.crops",
+        "pk":6,
+        "fields":{
+            "name": "Apples",
+            "picture": "https://media.self.com/photos/5b6b0b0cbb7f036f7f5cbcfa/4:3/w_1920,c_limit/apples.jpg",
+            "description": "This is where instructions go",
+            "plant_season": " Fall",
+            "grow_time": 10,
+            "average_yield":  "7 to 10 pounds per 100 sq ft"
         }
     }
 ]

@@ -7,14 +7,11 @@ class FarmSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Farm
-        fields = ['id', 'animals', 'crops']
+        fields = ['id','user', 'animals', 'crops']
+
 
     def get_animals(self, obj):
-        animals = obj.animals.all()
-        animals = [x.name for x in animals]
-        return animals
-    
+        return [animal.name for animal in obj.animals.all()]
+
     def get_crops(self, obj):
-        crops = obj.crops.all()
-        crops = [x.name for x in crops]
-        return crops
+        return [crop.name for crop in obj.crops.all()]

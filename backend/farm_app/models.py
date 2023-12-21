@@ -5,7 +5,7 @@ from animals_app.models import Animals
 
 class Farm(models.Model):
     name = models.CharField(max_length=255)
-    user = models.ManyToManyField(Farmer, related_name='user')
+    user = models.ForeignKey(Farmer, related_name='user', on_delete=models.CASCADE)
     crops = models.ManyToManyField(Crops, related_name='crops')
     animals = models.ManyToManyField(Animals,related_name='animals')
 

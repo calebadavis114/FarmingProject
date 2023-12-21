@@ -6,5 +6,5 @@ register_converter(IntOrStrConverter, 'int_or_str')
 
 urlpatterns = [
     path('', All_Crops.as_view(), name='all_crops'),
-    path('<int_or_str:id>/', A_Crop.as_view(), name='a_crop')
+    path('<int_or_str:id>/', A_Crop.as_view(), name='a_crop'),
 ]

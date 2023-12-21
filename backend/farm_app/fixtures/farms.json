@@ -4,19 +4,9 @@
         "pk": 1,
         "fields": {
           "name": "Caleb's Farm",
-          "user": [1],
+          "user": 1,
           "crops": [1, 2],
           "animals": [3, 4]
-        }
-      },
-      {
-        "model": "farm_app.farm",
-        "pk": 2,
-        "fields": {
-          "name": "Julia's Farm",
-          "user": [1],
-          "crops": [4, 1],
-          "animals": [5, 3]
         }
       }
 ]

@@ -8,13 +8,12 @@ import requests
 
 class All_Animals(APIView):
     def get(self, request):
-        # Retrieve all instances from the Animals model
         all_animal_instances = Animals.objects.all()
         api_data_for_all = []
 
         for animal_instance in all_animal_instances:
             api_data = self.fetch_data_from_api(animal_instance.name)
-            api_data_for_all.append(api_data)
+            api_data_for_all.append(api_data[0])
 
         return Response(api_data_for_all)
 
@@ -40,7 +39,7 @@ class An_Animals(APIView):
         api_url = 'https://api.api-ninjas.com/v1/animals?name={}'.format(name)
         response = requests.get(api_url, headers={'X-Api-Key': 'iORkRp6U8rzM1rsP3lw8Tg==RdFOj4k7xDjaTqoa'})
         if response.status_code == requests.codes.ok:
-            animal = response.json()
+            animal = response.json()[0]
             return Response(animal)
         else:
             print("Error:", response.status_code, response.text)

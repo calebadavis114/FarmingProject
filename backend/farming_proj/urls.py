@@ -6,5 +6,6 @@ urlpatterns = [
     path('api/v1/user/', include('user_app.urls')),
     path('api/v1/crops/', include('crops_app.urls')),
     path('api/v1/animals/', include('animals_app.urls')),
-    path('api/v1/farms/', include('farm_app.urls'))
+    path('api/v1/farms/', include('farm_app.urls')),
+    path('api/v1/image/', include('noun_app.urls')),
 ]
